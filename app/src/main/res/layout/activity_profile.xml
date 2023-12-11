@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_bg"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_300sdp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_home_img" />
+
+    <EditText
+        android:id="@+id/nameEditTxt"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_searched"
+        android:drawablePadding="15dp"
+        android:hint="@string/name"
+        android:inputType="textCapWords"
+        android:padding="16dp"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="#e2979797"
+        android:visibility="gone"
+        app:drawableLeftCompat="@drawable/ic_name" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:text="Permission"
+            android:textAllCaps="true"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_18ssp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="Allow Step Counter - Step Tracker to acccess your Physical activity ? So Please allow Permission"
+            android:textColor="@color/black_33"
+            android:textSize="@dimen/_14ssp" />
+
+        <TextView
+            android:id="@+id/createProfile"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:background="@drawable/button"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="Grant Permission"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13ssp" />
+    </LinearLayout>
+</LinearLayout>

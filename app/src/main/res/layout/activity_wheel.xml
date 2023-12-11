@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/spin_bg">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar_ly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_game_back" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_spin_ly"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_400sdp"
+                android:layout_centerHorizontal="true">
+
+                <ImageView
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/txt_spin" />
+
+                <ImageView
+                    android:id="@+id/iv_spin_wheel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_40sdp"
+                    android:src="@drawable/spin_wheel" />
+
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/pin" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/withdraw_money"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_spin_ly"
+                android:layout_centerHorizontal="true"
+                android:layout_marginHorizontal="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginRight="50dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/btn_click_to_win" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/ll_party"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/party" />
+</RelativeLayout>

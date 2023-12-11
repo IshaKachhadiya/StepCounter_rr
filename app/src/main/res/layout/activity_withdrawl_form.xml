@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+
+        <include
+            android:id="@+id/tool_bar"
+            layout="@layout/toolbar_ly"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tool_bar"
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_back"
+            android:backgroundTint="@color/white_F5"
+            android:gravity="center"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="- My Purse -"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black_33"
+                    android:textSize="@dimen/_16ssp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_60sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/btn_back"
+                    android:padding="@dimen/_10sdp">
+
+                    <TextView
+                        android:id="@+id/txt_dg_total_main_coin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:includeFontPadding="false"
+                        android:singleLine="true"
+                        android:text="00000 "
+                        android:textColor="@color/black_33"
+                        android:textSize="@dimen/_22ssp"
+                        app:drawableLeftCompat="@drawable/coins" />
+
+                    <TextView
+                        android:id="@+id/txt_equal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/txt_dg_total_main_coin"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:includeFontPadding="false"
+                        android:singleLine="true"
+                        android:text="="
+                        android:textColor="@color/black_33"
+                        android:textSize="@dimen/_22ssp" />
+
+                    <TextView
+                        android:id="@+id/txt_total_coin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/txt_equal"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:singleLine="true"
+                        android:text=" "
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_16ssp" />
+
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/edt_stroke_bg"
+                    android:fontFamily="@font/poppins_medium"
+                    android:hint="Enter Name"
+                    android:inputType="text"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="@color/gray_73"
+                    android:textSize="@dimen/_11ssp" />
+
+                <EditText
+                    android:id="@+id/paytm"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/edt_stroke_bg"
+                    android:fontFamily="@font/poppins_medium"
+                    android:hint="Paytm Number"
+                    android:maxLength="10"
+                    android:padding="@dimen/_5sdp"
+                    android:phoneNumber="true"
+                    android:singleLine="true"
+                    android:textColor="@color/gray_73"
+                    android:textSize="@dimen/_11ssp" />
+
+                <EditText
+                    android:id="@+id/coin"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/edt_stroke_bg"
+                    android:fontFamily="@font/poppins_medium"
+                    android:hint="Number of Coin"
+                    android:inputType="number"
+                    android:maxLength="8"
+                    android:padding="@dimen/_5sdp"
+                    android:singleLine="true"
+                    android:textColor="@color/gray_73"
+                    android:textSize="@dimen/_11ssp" />
+
+                <RelativeLayout
+                    android:id="@+id/gotoWithdrawal"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:background="@drawable/btn_dg">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginHorizontal="20dp"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="Get Withdraw"
+                        android:textColor="@color/white"
+                        app:drawableLeftCompat="@drawable/ic_youtube"
+                        app:drawableRightCompat="@drawable/ic_single_coin" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:includeFontPadding="false"
+                    android:text="Note: Minimum Withdrawal 30,00,000 Coin"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_10ssp" />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_close" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

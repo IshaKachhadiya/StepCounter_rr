@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "587426694651",
+    "project_id": "step-counter-7e022",
+    "storage_bucket": "step-counter-7e022.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:587426694651:android:2d68d946a5a6e83472b75e",
+        "android_client_info": {
+          "package_name": "com.mysweat.pedocounter.walkerstep"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuDJJMPhINpKhP3ZF7OpZ_tvEqKiZZHps"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

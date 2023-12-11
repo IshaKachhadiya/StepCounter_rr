@@ -1,0 +1,888 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/tool_bar"
+                layout="@layout/toolbar_ly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:id="@+id/looti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_130sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/walk" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_one"
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="@dimen/_70sdp"
+                        android:layout_marginStart="@dimen/_20sdp">
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:id="@+id/img1"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_100sdp"
+                            android:layout_centerHorizontal="true"
+                            app:lottie_autoPlay="true"
+                            app:lottie_loop="true"
+                            app:lottie_rawRes="@raw/jump" />
+
+                        <TextView
+                            android:id="@+id/txt_f_"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="@dimen/_2sdp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_9ssp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_two"
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="@dimen/_70sdp"
+                        android:layout_below="@+id/rl_one"
+                        android:layout_marginStart="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_10sdp">
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:id="@+id/img2"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_100sdp"
+                            android:layout_centerHorizontal="true"
+                            app:lottie_autoPlay="true"
+                            app:lottie_loop="true"
+                            app:lottie_rawRes="@raw/jump" />
+
+                        <TextView
+                            android:id="@+id/txt_s_"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="@dimen/_2sdp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_9ssp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_three"
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="@dimen/_70sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="@dimen/_50sdp"
+                        android:layout_marginEnd="@dimen/_20sdp">
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:id="@+id/img3"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_100sdp"
+                            android:layout_centerHorizontal="true"
+                            app:lottie_autoPlay="true"
+                            app:lottie_loop="true"
+                            app:lottie_rawRes="@raw/jump" />
+
+                        <TextView
+                            android:id="@+id/txt_t_"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="@dimen/_2sdp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_9ssp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_four"
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="@dimen/_70sdp"
+                        android:layout_below="@+id/rl_three"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_40sdp">
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:id="@+id/img4"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_100sdp"
+                            android:layout_centerHorizontal="true"
+                            app:lottie_autoPlay="true"
+                            app:lottie_loop="true"
+                            app:lottie_rawRes="@raw/jump" />
+
+                        <TextView
+                            android:id="@+id/txt_four_"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="@dimen/_2sdp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_9ssp" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_gravity="center_horizontal"
+                android:visibility="visible">
+
+                <Button
+                    android:id="@+id/btn_start"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_38sdp"
+                    android:background="@drawable/curve_shap_mainbtns"
+                    android:fontFamily="@font/poppins_medium"
+                    android:includeFontPadding="false"
+                    android:text="@string/start"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14ssp"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btn_stop"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_38sdp"
+                    android:background="@drawable/curve_shap_mainbtns"
+                    android:fontFamily="@font/poppins_medium"
+                    android:includeFontPadding="false"
+                    android:text="@string/stop"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14ssp"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <LinearLayout
+                    android:id="@+id/lll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_30sdp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:background="@drawable/btn_back"
+                        android:gravity="bottom"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_20sdp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:text="Steps &amp; Bonus"
+                            android:textColor="@color/black_33"
+                            android:textSize="@dimen/_18ssp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="@dimen/_10ssp"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:id="@+id/txt_step_coin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:drawablePadding="@dimen/_10ssp"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:gravity="center"
+                                android:includeFontPadding="false"
+                                android:text="0"
+                                android:textColor="@color/text_color"
+                                android:textSize="@dimen/_24ssp"
+                                app:drawableLeftCompat="@drawable/ic_foot_main" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="@dimen/_15sdp"
+                                android:layout_weight="1"
+                                android:src="@drawable/ic_transform" />
+
+                            <TextView
+                                android:id="@+id/txt_step_get_coin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_20sdp"
+                                android:layout_weight="1"
+                                android:drawablePadding="@dimen/_10ssp"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:gravity="center"
+                                android:includeFontPadding="false"
+                                android:text="0"
+                                android:textColor="@color/text_color"
+                                android:textSize="@dimen/_24ssp"
+                                app:drawableLeftCompat="@drawable/coins" />
+
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/btn_watch_get_coin"
+                            android:layout_width="@dimen/_200sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:background="@drawable/curve_shap_mainbtns"
+                            android:fontFamily="@font/poppins_medium"
+                            android:includeFontPadding="false"
+                            android:text="Coin"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_14ssp"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_simple_ly"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:background="@drawable/btn_back"
+                        android:gravity="bottom">
+
+                        <TextView
+                            android:id="@+id/stepTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_40sdp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:text=""
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/_24ssp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/stepTxt"
+                            android:layout_marginStart="@dimen/_20sdp"
+                            android:layout_marginBottom="@dimen/_20sdp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:text="@string/steps"
+                            android:textColor="@color/black_33"
+                            android:textSize="@dimen/_18ssp" />
+
+                        <TextView
+                            android:id="@+id/goal_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1000\10Goals"
+                            android:textColor="#e3e3e3"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/abv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="5dp"
+                        android:paddingBottom="10dp"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_80sdp"
+                            android:layout_marginHorizontal="@dimen/_6sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_back"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <ImageView
+                                        android:id="@+id/distanceimg"
+                                        android:layout_width="@dimen/_35sdp"
+                                        android:layout_height="@dimen/_35sdp"
+                                        app:srcCompat="@drawable/ic_distance_square" />
+
+                                    <TextView
+                                        android:id="@+id/distance_txt"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="@dimen/_10sdp"
+                                        android:fontFamily="@font/poppins_medium"
+                                        android:text="0"
+                                        android:textColor="@color/black_33"
+                                        android:textSize="@dimen/_20ssp" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/distance"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:includeFontPadding="false"
+                                    android:text="@string/distance_km"
+                                    android:textColor="@color/black_33"
+                                    android:textSize="@dimen/_12ssp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_80sdp"
+                            android:layout_marginHorizontal="@dimen/_6sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_back"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <ImageView
+                                        android:id="@+id/burn_calorie"
+                                        android:layout_width="@dimen/_35sdp"
+                                        android:layout_height="@dimen/_35sdp"
+                                        app:srcCompat="@drawable/ic_fire" />
+
+                                    <TextView
+                                        android:id="@+id/calorie_txt"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="@dimen/_10sdp"
+                                        android:fontFamily="@font/poppins_medium"
+                                        android:gravity="center"
+                                        android:text="0"
+                                        android:textColor="@color/black_33"
+                                        android:textSize="@dimen/_20ssp" />
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/calorie"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:includeFontPadding="false"
+                                    android:text="@string/calories"
+                                    android:textColor="@color/black_33"
+                                    android:textSize="@dimen/_12ssp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_ad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_simple_ly"
+                    android:layout_marginHorizontal="@dimen/_5sdp">
+
+                    <include
+                        android:id="@+id/ads_ly"
+                        layout="@layout/allsmallnative" />
+
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/rl_service"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_earn_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_head"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="Earn More By Doing"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black_33"
+                        android:textSize="@dimen/_18ssp" />
+
+                    <ImageView
+                        android:id="@+id/ic_spin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/ic_spin_banner"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/ic_luck_slot"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/ic_lucky_slot"
+                        android:visibility="visible" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/btn_back"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/ll_water_habit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/ic_water"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_water_habit" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:includeFontPadding="false"
+                                    android:text="Water Habit"
+                                    android:textColor="@color/black_33"
+                                    android:textSize="@dimen/_13ssp" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:src="@drawable/coins" />
+
+                                    <TextView
+                                        android:id="@+id/txt_water_coin"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="@dimen/_10sdp"
+                                        android:fontFamily="@font/poppins_medium"
+                                        android:text="3600"
+                                        android:textColor="@color/black_33" />
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/rll"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:gravity="end">
+
+                                <TextView
+                                    android:id="@+id/txt_times"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_marginEnd="@dimen/_15sdp"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:includeFontPadding="false"
+                                    android:text=""
+                                    android:textColor="@color/black_33" />
+
+                                <RelativeLayout
+                                    android:id="@+id/rl_w_coin"
+                                    android:layout_width="70dp"
+                                    android:layout_height="25dp"
+                                    android:visibility="visible">
+
+                                    <RelativeLayout
+                                        android:id="@+id/rl_add_coin"
+                                        android:layout_width="70dp"
+                                        android:layout_height="25dp">
+
+                                        <TextView
+                                            android:id="@+id/start_btn"
+                                            android:layout_width="70dp"
+                                            android:layout_height="25dp"
+                                            android:background="@drawable/btn_back"
+                                            android:backgroundTint="@color/btn_color"
+                                            android:fontFamily="@font/poppins_medium"
+                                            android:gravity="center"
+                                            android:text="Drink"
+                                            android:textColor="@color/white_F5"
+                                            android:textSize="12sp" />
+                                    </RelativeLayout>
+
+
+                                    <TextView
+                                        android:id="@+id/water_get_coin"
+                                        android:layout_width="70dp"
+                                        android:layout_height="25dp"
+                                        android:background="@drawable/btn_back"
+                                        android:backgroundTint="@color/btn_color"
+                                        android:fontFamily="@font/poppins_medium"
+                                        android:gravity="center"
+                                        android:text="Get coin"
+                                        android:textColor="@color/white_F5"
+                                        android:textSize="12sp"
+                                        android:visibility="gone" />
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_watch_ad"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_watch_ad" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:includeFontPadding="false"
+                                    android:text="Watch Ad"
+                                    android:textColor="@color/black_33"
+                                    android:textSize="@dimen/_13ssp" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:src="@drawable/coins" />
+
+                                    <TextView
+                                        android:id="@+id/txt_watch_ad"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="@dimen/_10sdp"
+                                        android:fontFamily="@font/poppins_medium"
+                                        android:text="2125"
+                                        android:textColor="@color/black_33" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/rll_watch_ad"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:gravity="end">
+
+                                <TextView
+                                    android:id="@+id/txt_watch_times"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_marginEnd="@dimen/_15sdp"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:includeFontPadding="false"
+                                    android:text=""
+                                    android:textColor="@color/black_33" />
+
+                                <RelativeLayout
+                                    android:id="@+id/rl_watch_coin"
+                                    android:layout_width="70dp"
+                                    android:layout_height="25dp"
+                                    android:visibility="visible">
+
+                                    <RelativeLayout
+                                        android:id="@+id/rl_watch_add_coin"
+                                        android:layout_width="70dp"
+                                        android:layout_height="25dp">
+
+                                        <TextView
+                                            android:id="@+id/watch_start_btn"
+                                            android:layout_width="70dp"
+                                            android:layout_height="25dp"
+                                            android:background="@drawable/btn_back"
+                                            android:backgroundTint="@color/btn_color"
+                                            android:fontFamily="@font/poppins_medium"
+                                            android:gravity="center"
+                                            android:text="Drink"
+                                            android:textColor="@color/white_F5"
+                                            android:textSize="12sp" />
+                                    </RelativeLayout>
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_invite"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_invite" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_marginBottom="4dp"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:includeFontPadding="false"
+                                    android:text="Invite Friend"
+                                    android:textColor="@color/black_33"
+                                    android:textSize="@dimen/_13ssp" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:src="@drawable/coins" />
+
+                                    <TextView
+                                        android:id="@+id/txt_invite_ad"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="@dimen/_10sdp"
+                                        android:fontFamily="@font/poppins_medium"
+                                        android:text="6000"
+                                        android:textColor="@color/black_33" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/rll_invite"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:gravity="end">
+
+                                <TextView
+                                    android:id="@+id/txt_invite_times"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_marginEnd="@dimen/_15sdp"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:includeFontPadding="false"
+                                    android:text=""
+                                    android:textColor="@color/black_33" />
+
+                                <RelativeLayout
+                                    android:id="@+id/rl_invite_coin"
+                                    android:layout_width="70dp"
+                                    android:layout_height="25dp"
+                                    android:visibility="visible">
+
+                                    <RelativeLayout
+                                        android:layout_width="70dp"
+                                        android:layout_height="25dp">
+
+                                        <TextView
+                                            android:id="@+id/invite_start_btn"
+                                            android:layout_width="70dp"
+                                            android:layout_height="25dp"
+                                            android:background="@drawable/btn_back"
+                                            android:backgroundTint="@color/btn_color"
+                                            android:fontFamily="@font/poppins_medium"
+                                            android:gravity="center"
+                                            android:text="Invite"
+                                            android:textColor="@color/white_F5"
+                                            android:textSize="12sp" />
+                                    </RelativeLayout>
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

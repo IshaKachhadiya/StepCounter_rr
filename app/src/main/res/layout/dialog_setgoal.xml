@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="@dimen/_30ssp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/btn_back">
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:includeFontPadding="false"
+                android:text="@string/step_goals"
+                android:textColor="@color/black_33"
+                android:textSize="@dimen/_14ssp" />
+
+            <EditText
+                android:id="@+id/editGoal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:background="@drawable/edit_text_bottom_border"
+                android:inputType="number"
+                android:maxLength="6"
+                android:padding="@dimen/_7sdp"
+                android:text="1000"
+                android:textColor="@color/black_33" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/oktxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll"
+            android:layout_alignParentEnd="true"
+            android:layout_marginHorizontal="@dimen/_20ssp"
+            android:layout_marginTop="@dimen/_20ssp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:includeFontPadding="false"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/set"
+            android:textColor="@color/text_color"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_close" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="progress_style">
+        <enum name="line" value="0" />
+        <enum name="solid" value="1" />
+        <enum name="solid_line" value="2" />
+    </attr>
+    <attr name="cy_src" format="string">
+    </attr>
+</resources>

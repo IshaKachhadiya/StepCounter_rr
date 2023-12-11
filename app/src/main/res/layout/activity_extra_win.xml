@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/slot_bg">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/laytool_bar"
+            layout="@layout/toolbar_ly"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_game_back" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_490sdp">
+
+                <ImageView
+                    android:id="@+id/iv_extra_win"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:adjustViewBounds="true"
+                    android:padding="@dimen/_20sdp"
+                    android:src="@drawable/sloter" />
+
+                <LinearLayout
+                    android:id="@+id/ll_three"
+                    android:layout_width="@dimen/_180sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_120sdp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv1"
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:padding="@dimen/_10sdp"
+                        android:src="@drawable/iv_rc" />
+
+                    <ImageView
+                        android:id="@+id/iv2"
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:padding="@dimen/_10sdp"
+                        android:src="@drawable/iv_rc" />
+
+                    <ImageView
+                        android:id="@+id/iv3"
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:padding="@dimen/_10sdp"
+                        android:src="@drawable/iv_rc" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/click_to_win"
+                    android:layout_width="@dimen/_140sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_three"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="@dimen/_70sdp"
+                    android:layout_marginTop="@dimen/_70sdp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/btn_click_to_win" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/ll_extra_party"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/party" />
+
+</RelativeLayout>

@@ -1,0 +1,1141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_F5">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:fontFamily="@font/poppins_semibold"
+            android:includeFontPadding="false"
+            android:text="@string/badges"
+            android:textAllCaps="true"
+            android:textColor="@color/black_33"
+            android:textSize="@dimen/_18ssp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/ll_daily"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/btn_back"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:drawableLeft="@drawable/ic_footprint"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:includeFontPadding="false"
+                        android:text="Daily Step"
+                        android:textColor="@color/black_33"
+                        android:textSize="@dimen/_15ssp" />
+
+                    <TextView
+                        android:id="@+id/txt_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:includeFontPadding="false"
+                        android:text="More"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_12ssp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/pg_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:includeFontPadding="false"
+                    android:text="@string/get_achievement"
+                    android:textColor="@color/gray_73"
+                    android:textSize="@dimen/_10ssp" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="100dp"
+                    android:layout_height="5dp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="5dp"
+                    android:indeterminate="false"
+                    android:max="9"
+                    android:progressDrawable="@drawable/progress_bar" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="@dimen/_7sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/three_on"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/three_badge_on"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/three_off"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/three_badge_off" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/six_on"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/six_badge_on"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/six_off"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/six_badge_off" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/ten_on"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/ten_badge_on"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/ten_off"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/ten_badge_off" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/fifteen_on"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/fifteen_badge_on"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/fifteen_off"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/fifteen_badge_off" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_more_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="@dimen/_7sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/twenty_on"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/twenty_badge_on"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/twenty_off"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/twenty_badge_off" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/thirty_on"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/thirty_badge_on"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/thirty_off"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/thirty_badge_off" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/fourty_on"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/fourty_badge_on"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/fourty_off"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/fourty_badge_off" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/sixty_on"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/sixty_badge_on"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/sixty_off"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/sixty_badge_off" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/eighty_on"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/eighty_badge_on"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/eighty_off"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/eighty_badge_off" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_dis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/btn_back"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:drawableLeft="@drawable/ic_distance"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:includeFontPadding="false"
+                        android:text="Daily Distance"
+                        android:textColor="@color/black_33"
+                        android:textSize="@dimen/_15ssp" />
+
+                    <TextView
+                        android:id="@+id/dis_txt_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:includeFontPadding="false"
+                        android:text="More"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_12ssp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/dis_pg_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:includeFontPadding="false"
+                    android:text="@string/get_achievement"
+                    android:textColor="@color/gray_73"
+                    android:textSize="@dimen/_10ssp" />
+
+                <ProgressBar
+                    android:id="@+id/dis_progressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="100dp"
+                    android:layout_height="5dp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="5dp"
+                    android:indeterminate="false"
+                    android:max="9"
+                    android:progressDrawable="@drawable/progress_bar" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/dis_three_on"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/dis_badge_on"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/dis_three_off"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/dis_badge_off" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/poppins_extrabold"
+                            android:includeFontPadding="false"
+                            android:text="@string/achieve_one_distance"
+                            android:textColor="@color/gray_c0"
+                            android:textSize="@dimen/_14ssp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/dis_six_on"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/dis_badge_on"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/dis_six_off"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/dis_badge_off" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/poppins_extrabold"
+                            android:includeFontPadding="false"
+                            android:text="@string/achieve_two_distance"
+                            android:textColor="@color/gray_c0"
+                            android:textSize="@dimen/_14ssp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/dis_ten_on"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/dis_badge_on"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/dis_ten_off"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/dis_badge_off" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/poppins_extrabold"
+                            android:includeFontPadding="false"
+                            android:text="@string/achieve_three_distance"
+                            android:textColor="@color/gray_c0"
+                            android:textSize="@dimen/_14ssp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/dis_fifteen_on"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/dis_badge_on"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/dis_fifteen_off"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/dis_badge_off" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/poppins_extrabold"
+                            android:includeFontPadding="false"
+                            android:text="@string/achieve_four_distance"
+                            android:textColor="@color/gray_c0"
+                            android:textSize="@dimen/_14ssp" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_dis_more_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/dis_twenty_on"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/dis_badge_on"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/dis_twenty_off"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/dis_badge_off" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/poppins_extrabold"
+                            android:includeFontPadding="false"
+                            android:text="@string/achieve_five_distance"
+                            android:textColor="@color/gray_c0"
+                            android:textSize="@dimen/_14ssp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/dis_thirty_on"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/dis_badge_on"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/dis_thirty_off"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/dis_badge_off" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/poppins_extrabold"
+                            android:includeFontPadding="false"
+                            android:text="@string/achieve_six_distance"
+                            android:textColor="@color/gray_c0"
+                            android:textSize="@dimen/_14ssp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/dis_fourty_on"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/dis_badge_on"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/dis_fourty_off"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/dis_badge_off" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/poppins_extrabold"
+                            android:includeFontPadding="false"
+                            android:text="@string/achieve_seven_distance"
+                            android:textColor="@color/gray_c0"
+                            android:textSize="@dimen/_14ssp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/dis_sixty_on"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/dis_badge_on"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/dis_sixty_off"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/dis_badge_off" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/poppins_extrabold"
+                            android:includeFontPadding="false"
+                            android:text="@string/achieve_eight_distance"
+                            android:textColor="@color/gray_c0"
+                            android:textSize="@dimen/_14ssp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/dis_eighty_on"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/dis_badge_on"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/dis_eighty_off"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/dis_badge_off" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/poppins_extrabold"
+                            android:includeFontPadding="false"
+                            android:text="@string/achieve_nine_distance"
+                            android:textColor="@color/gray_c0"
+                            android:textSize="@dimen/_14ssp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/rl_ad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp">
+
+                <include
+                    android:id="@+id/ads_ly"
+                    layout="@layout/allsmallnative" />
+
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/ll_cal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/btn_back"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:drawableLeft="@drawable/ic_calaories"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:includeFontPadding="false"
+                        android:text="Calories"
+                        android:textColor="@color/black_33"
+                        android:textSize="@dimen/_15ssp" />
+
+                    <TextView
+                        android:id="@+id/cal_txt_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:includeFontPadding="false"
+                        android:text="More"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_12ssp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/cal_pg_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:includeFontPadding="false"
+                    android:text="@string/get_achievement"
+                    android:textColor="@color/gray_73"
+                    android:textSize="@dimen/_10ssp" />
+
+                <ProgressBar
+                    android:id="@+id/cal_progressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="100dp"
+                    android:layout_height="5dp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="5dp"
+                    android:indeterminate="false"
+                    android:max="9"
+                    android:progressDrawable="@drawable/progress_bar" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="@dimen/_7sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/cal_three_on"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/dis_badge_on"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/cal_three_off"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/dis_badge_off" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/poppins_extrabold"
+                            android:includeFontPadding="false"
+                            android:text="@string/achieve_one_calorie"
+                            android:textColor="@color/gray_c0"
+                            android:textSize="@dimen/_14ssp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/cal_six_on"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/dis_badge_on"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/cal_six_off"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/dis_badge_off" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/poppins_extrabold"
+                            android:includeFontPadding="false"
+                            android:text="@string/achieve_two_calorie"
+                            android:textColor="@color/gray_c0"
+                            android:textSize="@dimen/_14ssp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/cal_ten_on"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/dis_badge_on"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/cal_ten_off"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/dis_badge_off" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/poppins_extrabold"
+                            android:includeFontPadding="false"
+                            android:text="@string/achieve_three_calorie"
+                            android:textColor="@color/gray_c0"
+                            android:textSize="@dimen/_14ssp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/cal_fifteen_on"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/dis_badge_on"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/cal_fifteen_off"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/dis_badge_off" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/poppins_extrabold"
+                            android:includeFontPadding="false"
+                            android:text="@string/achieve_four_calorie"
+                            android:textColor="@color/gray_c0"
+                            android:textSize="@dimen/_14ssp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_cal_more_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="@dimen/_7sdp"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/cal_twenty_on"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/dis_badge_on"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/cal_twenty_off"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/dis_badge_off" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/poppins_extrabold"
+                            android:includeFontPadding="false"
+                            android:text="@string/achieve_five_calorie"
+                            android:textColor="@color/gray_c0"
+                            android:textSize="@dimen/_14ssp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/cal_thirty_on"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/dis_badge_on"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/cal_thirty_off"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/dis_badge_off" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/poppins_extrabold"
+                            android:includeFontPadding="false"
+                            android:text="@string/achieve_six_calorie"
+                            android:textColor="@color/gray_c0"
+                            android:textSize="@dimen/_14ssp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/cal_fourty_on"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/dis_badge_on"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/cal_fourty_off"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/dis_badge_off" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/poppins_extrabold"
+                            android:includeFontPadding="false"
+                            android:text="@string/achieve_seven_calorie"
+                            android:textColor="@color/gray_c0"
+                            android:textSize="@dimen/_14ssp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/cal_sixty_on"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/dis_badge_on"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/cal_sixty_off"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/dis_badge_off" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/poppins_extrabold"
+                            android:includeFontPadding="false"
+                            android:text="@string/achieve_eight_calorie"
+                            android:textColor="@color/gray_c0"
+                            android:textSize="@dimen/_14ssp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/cal_eighty_on"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/dis_badge_on"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/cal_eighty_off"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/dis_badge_off" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/poppins_extrabold"
+                            android:includeFontPadding="false"
+                            android:text="@string/achieve_nine_calorie"
+                            android:textColor="@color/gray_c0"
+                            android:textSize="@dimen/_14ssp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
